@@ -1,0 +1,1 @@
+{"scripts":{"deploy-folder":"public/johnantoni:famous-typewriter","deploy":[["run","snapshot-component","--","-n","johnantoni:famous-typewriter"]],"setup":[["install"],["run","local-only-bootstrap","--","--watchAfterBuild=no"]]}}
