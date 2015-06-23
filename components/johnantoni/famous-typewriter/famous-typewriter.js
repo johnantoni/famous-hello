@@ -22,5 +22,12 @@ FamousFramework.scene('johnantoni:famous-typewriter', {
           'scale': [0.5,0.5]
         }
     },
+    events: {
+        '$lifecycle': {
+            'post-load': function($state) {
+              console.log("page loaded...");
+            }
+        }
+    },
     tree: '<node id="parent"><node id="child"></node></node>'
 });
