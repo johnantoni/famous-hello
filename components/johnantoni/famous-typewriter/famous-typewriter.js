@@ -27,7 +27,19 @@ FamousFramework.scene('johnantoni:famous-typewriter', {
             'post-load': function($state) {
               console.log("page loaded...");
             }
+        },
+        '#child': {
+            'click': function($state, $payload) {
+                 // get the 'clickCount' value (zero)
+                 var oldValue = $state.get('clickCount');
+                 // increment the counter by 5
+                 $state.set('clickCount', oldValue + 1);
+                console.log('clicked...' + $state.get('clickCount'));
+            }
         }
+    },
+    states: {
+        clickCount: 0 // will increment by 5 on a click
     },
     tree: '<node id="parent"><node id="child"></node></node>'
 });
